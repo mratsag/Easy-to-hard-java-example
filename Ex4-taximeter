@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int oFee = 10;
+        double kmPrice = 2.20;
+        double distance;
+
+        System.out.println("Enter the distance traveled:");
+        distance = input.nextDouble();
+
+        double totalAmount = oFee + distance * kmPrice;
+
+        if (totalAmount <= 20) {
+            totalAmount = 20;
+            System.out.printf("Total price: %.2f\n", totalAmount);
+        } else {
+            System.out.printf("Total price: %.2f\n", totalAmount);
+        }
+    }
+}
