@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int math,turkish,phy,che,history,music;
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("Enter your physics lesson grade :");
+        phy = input.nextInt();
+
+        System.out.println("Enter your mathematics lesson grade :");
+        math = input.nextInt();
+
+        System.out.println("Enter your music lesson grade :");
+        music = input.nextInt();
+
+        System.out.println("Enter your chemistry lesson grade :");
+        che = input.nextInt();
+
+        System.out.println("Enter your history lesson grade :");
+        history = input.nextInt();
+
+        System.out.println("Enter your turkish lesson grade :");
+        turkish = input.nextInt();
+
+        double average = (phy + math + turkish + che + music + history) /6.0;
+
+        System.out.println("Physics grade : "+phy);
+        System.out.println("Mathematics grade : "+math);
+        System.out.println("Turkish grade : "+turkish);
+        System.out.println("Chemistry grade : "+che);
+        System.out.println("Music grade : "+music);
+        System.out.println("History grade : "+history);
+        System.out.println("Your GPA: "+average);
+    }
+}
