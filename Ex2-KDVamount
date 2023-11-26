@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double price = 0.0;
+        String KDVRate = "%18";
+        double KDV = 18/100.0;
+        System.out.println("Enter the price of the product :");
+        price = input.nextDouble();
+
+        double amount = price*KDV;
+
+        System.out.println("Entered price : "+price);
+        System.out.println("KDV rate : "+KDVRate);
+        System.out.println("KDV amount : "+amount);
+        System.out.println("KDV price of the product : " +(price+amount));
+    }
+}
