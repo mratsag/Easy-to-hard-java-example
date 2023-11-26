@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int radius;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the radius of the circle:");
+        radius = input.nextInt();
+
+        double area = ((double) 22 / 7) * radius * radius;
+        double env = 2 * ((double) 22 / 7) * radius;
+
+        System.out.println("Circle radius: " + radius);
+        System.out.printf("Circle area: %.2f\n", area);
+        System.out.printf("Circle environment: %.2f\n", env);
+    }
+}
